@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color:hsl(47, 88%, 63%);
+      margin: 0;
+      padding: 20px;
+    
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border: black 1px solid;
+      box-shadow: 8px 8px 0 rgba(0, 0, 0, 1); 
+      position: relative;
+    }
+    .card-image {
+  position: relative;
+}
+    .card-image img {
+      width: 100%;
+      height: auto;
+    }
+    .card-tag {
+      position: absolute;
+      top: 22.5rem;
+      left: 9px;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    .card-tag button {
+  background-color: hsl(47, 88%, 63%);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+    .card-content {
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .card-title {
+      padding: 0 20px;
+      margin: 10px 0;
+    }
+    .card-title h2 {
+      font-size: 1.5em;
+      margin-top: -1.5rem; 
+      margin-bottom: 10px; 
+      color: #333;
+    }
+    .card-text {
+      padding: 0 20px 20px;
+      color: #666;
+      margin: -4px 0;
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .author-card {
+      display: flex;
+      align-items: center;
+    }
+    .author-image img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .author-name h4 {
+      margin: 0;
+      font-size: 1em;
+      color: #333;
+    }
+    @media (max-width: 600px) {
+      .card {
+        margin: 0 10px;
+      }
+      .card-tag {
+        font-size: 0.8em;
+      }
+      .card-title h2 {
+        font-size: 1.2em;
+      }
+      .author-image img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    @media (max-width: 400px) {
+      .card-tag {
+        padding: 3px 8px;
+      }
+      .card-title h2 {
+        font-size: 1em;
+      }
+      .author-image img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    @media (max-width: 300px) {
+      .card-tag {
+        padding: 2px 6px;
+      }
+      .card-title h2 {
+        font-size: 0.9em;
+      }
+      .author-image img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    @media (max-width: 200px) {
+      .card-tag {
+        padding: 1px 4px;
+      }
+      .card-title h2 {
+        font-size: 0.8em;
+      }
+      .author-image img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    @media (max-width: 100px) {
+      .card-tag {
+        padding: 0;
+        font-size: 0.7em;
+      }
+      .card-title h2 {
+        font-size: 0.7em;
+      }
+      .author-image img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+   <div class="card-image">
+  <img src="./assets/images/illustration-article.svg" alt="Illustration of a person reading an article">
+  <div class="card-tag">
+    <button>Learning</button>
+  </div>
+</div>
+    <div class="card-content">
+      <p>Published 21 Dec 2023</p>
+    </div>
+    <div class="card-title">
+      <h2>  HTML & CSS foundations</h2>
+    </div>
+    <div class="card-text">
+      <p>These language are the backbone of every</p>
+      <p>website, defining structure, content, and </p>
+      <p> presentation.</p>
+    </div>
+<div class="author">
+   <div class="author-card">
+    <div class="author-image">
+      <img src="./assets/images/image-avatar.webp" alt="Author's avatar">
+   </div>
+   <div class="author-name">
+      <h4>Greg Hooper</h4>
+</div>
+</div>
+</body>
+</html>
